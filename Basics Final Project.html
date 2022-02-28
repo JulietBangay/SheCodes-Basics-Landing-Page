@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final project - Juliet Bangay</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          #e08b7d 0%,
+          #dad4ec 30%,
+          #f3e7e9 100%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-family: monospace;
+        font-size: 34px;
+        line-height: 48px;
+        color: #27296d;
+      }
+
+      h2 {
+        text-align: center;
+        color: #27296d;
+        font-family: Andale Mono, monospace;
+        font-size: 20px;
+        line-height: 48px;
+        padding: 10px;
+        font-weight: 500;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+      }
+
+      p {
+        color: #27296d;
+        font-size: 18px;
+        font-family: Andale Mono, monospace;
+        text-align: center;
+      }
+      .link {
+        font-weight: 400;
+        color: #27296d;
+      }
+      a {
+        color: #5e63b6;
+      }
+      .astrophotographyWorkshop {
+        color: #27296d;
+        font-size: 18px;
+        font-family: Andale Mono, monospace;
+        font-weight: bolder;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #27296d;
+        background: #27296d;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 16px 24px;
+        font-weight: lighter;
+        font-family: Andale Mono, monospace;
+        transition: all 200ms ease-in-out;
+        box-shadow: #5e63b6 5px 5px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: transparent;
+        color: #27296d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>⭐Astrophotography⭐</h1>
+    <h2>
+      <em>A brief overview to capturing the universe</em>
+      <div>🌠</div>
+    </h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/244/original/iStock-646615284-1.jpg?1637244804"
+      alt="Photo of the Milky Way"
+      width="500"
+    />
+    <br />
+    <p>
+      Astrophotography, also known as astronomical imaging, is photography or
+      imaging of astronomical objects, celestial events, and areas of the night
+      sky. Astrophotography is a popular hobby among photographers and amateur
+      astronomers.
+      <span class="link">
+        <strong>Learn more</strong>
+
+        <a
+          href="https://en.wikipedia.org/wiki/Astrophotography"
+          target="_blank"
+        >
+          <strong> here.</strong></a
+        >
+      </span>
+    </p>
+    <br />
+    <div class="astrophotographyWorkshop">
+      To find out more about our beginners astrophotography course please
+      contact us! Please note that you must be 16 or older to take part in the
+      course.
+    </div>
+    <hr />
+    <button>Try our beginners course!</button>
+    <script>
+      function getInTouch() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let email = prompt("What is your email?");
+        if (age < 16) {
+          alert(
+            "Sorry " +
+              name +
+              ", you are too young to join the astrophotography class!"
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              ", we will be in touch about the astrophotography class shortly!"
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", getInTouch);
+    </script>
+  </body>
+</html>
